@@ -1,0 +1,23 @@
+<p>map-integration works!</p>
+
+
+<form [formGroup]="form">
+    <label>Latitude:</label>
+    <input type="text" id="lat" formControlName="latitude" pInputText /><br><br>
+    <label>Longitude:</label>
+    <input type="text" id='lng' formControlName="longitude" pInputText /><br><br>
+    <label>Latitude1:</label>
+    <input type="text" id="lat1" formControlName="latitude1" pInputText /><br><br>
+    <label>Longitude1:</label>
+    <input type="text" id='lng1' formControlName="longitude1" pInputText /><br><br>
+    <button pButton type="button" (click)="onChose()">onChoseLocation</button>
+</form>
+<br>
+<google-map height="500px" width="1500px" [zoom]="zoom" [center]="center" (mapClick)="addMarker($event)"
+    (mapClick)="mouseMove($event)">
+    <map-marker *ngFor="let markerPosition of markerPositions" [position]="markerPosition" [options]="markerOptions"
+        (mapClick)="moveMap($event)">
+    </map-marker>
+</google-map>
+Latitude:{{display?.lat}}<br>
+Longitude:{{display?.lng}}
