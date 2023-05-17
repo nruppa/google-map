@@ -9,6 +9,7 @@ import { GooglemapComponent } from './googlemap/googlemap.component';
 import { MaplocationComponent } from './maplocation/maplocation.component';
 import { ServiceService } from './service.service';
 import { LocationComponent } from './location/location.component';
+import { MapAddressComponent } from './map-address/map-address.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { LocationComponent } from './location/location.component';
     MapIntegrationComponent,
     GooglemapComponent,
     MaplocationComponent,
-    LocationComponent
+    LocationComponent,
+    MapAddressComponent
   ],
   imports: [
     BrowserModule,

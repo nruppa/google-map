@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import {  Component, OnInit, ViewChild } from '@angular/core';
 import { Loader } from '@googlemaps/js-api-loader';
 
 @Component({
@@ -21,7 +21,7 @@ export class GooglemapComponent implements OnInit {
   // }
   ngOnInit(): void {
     let loader = new Loader({
-      apiKey: 'AIzaSyB3dHIbl2Or9L1HRcKK7npM_R0qgMMnV90',
+      apiKey: 'AIzaSyDFaXNvUSNlqQoqlNBgCgppWcSeYxb5kDM',
     });
     loader.load().then(() => {
       // const location = { lat: 61.5240, lng: 105.3188 }

@@ -19,7 +19,6 @@ export class MapIntegrationComponent implements OnInit {
   map: any;
   @ViewChild(MapInfoWindow) infoWindow: MapInfoWindow | undefined;
   marker!: MapMarker;
-
   constructor(private fb: FormBuilder) { }
   ngOnInit(): void {
     this.form = this.fb.group({
